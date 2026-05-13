@@ -1,0 +1,24 @@
+{
+  "name": "agentpay-crypto-market-mcp",
+  "version": "1.1.0",
+  "description": "Crypto Market Data MCP Server — Real-time crypto prices, trends, and history from CoinGecko with AgentPay Pro upsell",
+  "type": "module",
+  "main": "server.py",
+  "scripts": {
+    "start": "python3 server.py",
+    "start:pro": "python3 server.py --pro-key YOUR_PRO_KEY"
+  },
+  "keywords": ["mcp", "crypto", "market-data", "agentpay", "ai", "model-context-protocol"],
+  "author": "AgentPay Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgentPayLabs/agentpay-crypto-market-mcp"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "mcp": ">=1.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      proKey:
+        type: string
+        description: >-
+          AgentPay Pro key for unlimited usage. Get yours at
+          https://buy.stripe.com/5kQ3cxflRabW9PW1AD1oI0r
+        default: ""
+  commandFunction:
+    type: python
+    path: server.py
+    args:
+      - --pro-key
+      - ${proKey}
