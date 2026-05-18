@@ -8,7 +8,7 @@ import argparse
 import json
 import httpx
 from typing import Any
-from mcp.server import Server, NotificationOptions
+from mcp.server.lowlevel import Server, NotificationOptions
 from mcp.server.models import InitializationOptions
 from mcp.types import Tool, TextContent
 
